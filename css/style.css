@@ -51,7 +51,7 @@ body {
     font-weight: 700;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translate(-50%, -50%); }
     .header__text-description,
     .header__text-description + span {
@@ -66,16 +66,30 @@ body {
   clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh); }
 
 .section__about {
-  height: 75vh;
+  height: 100vh;
   color: #202c4d;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .about__heading {
-  padding-top: 3rem;
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .about__technologies {
-  background-color: red; }
+  cursor: pointer;
+  margin: 2rem 2rem; }
+  .about__technologies-logo {
+    margin-top: 2rem;
+    width: 30rem; }
+  .about__technologies-arrow {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+
+.about__info {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.6rem; }
 
 .row {
   max-width: 90%;

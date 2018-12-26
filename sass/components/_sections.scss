@@ -14,8 +14,9 @@
   }
 
   &__about {
-    height: 75vh;
+    height: 100vh;
     color: rgb(32, 44, 77);
     text-align: center;
+    overflow: hidden;
   }
 }

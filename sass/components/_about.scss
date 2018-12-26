@@ -1,12 +1,27 @@
 .about {
   &__heading {
-    padding-top: 3rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   &__technologies {
-    background-color: red;
+    cursor: pointer;
+    margin: 2rem 2rem;
+
     &-logo {
+      margin-top: 2rem;
+      width: 30rem;
     }
+    &-arrow {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__info {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
   }
 }

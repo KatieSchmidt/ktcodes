@@ -13,28 +13,33 @@
     
       <section class="section__header">
         <div class="header">   
-          <p class="header__text">
-            <span class="header__text-name">Katie Schmidt.</span>
+          <h1 class="header__text">
+            <span class="header__text-name">Katie Schmidt. </br></span>
             <span class="header__text-description" 
             id="header__text-description" onclick=changeDescription()>Developer </span>
             <span onclick=changeDescription()>&rarr;</span>
-          </p>
+          </h1>
         </div>
       </section>
 
       <section class="section__about">
         <div class="about">
 
-            <div class="row about__heading">
+            <div class="about__heading">
                 <h1>Technologies</h1>
             </div>
 
-            <div class="row about__technologies">
-              <img class="about__technologies-logo" src="./img/HTML5_Logo_128.png" alt="html logo">
-              <p>&rarr;</p>
+            <div class="about__technologies" onclick=changeLogo() >
+              
+              <img
+              class="about__technologies-logo"
+              id="about__technologies-logo" src="./img/html5-css3-js.png" alt="html logo">
+              
+              <p class="about__technologies-arrow" >&rarr;</p>
+
             </div>
 
-            <div class="row about__info">
+            <div class="about__info">
               <p>
                 I am a self taught full stack web developer confident utilizing these
                 technologies and continuously striving to learn more.
