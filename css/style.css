@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #bbd0ec; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.header {
+  position: relative;
+  height: 100vh;
+  color: #202c4d; }
+  .header__text {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%); }
+    .header__text-description,
+    .header__text-description + span {
+      cursor: pointer; }
+
+.section__header {
+  height: 100vh;
+  background-image: linear-gradient(to right top, rgba(70, 130, 180, 0.6), rgba(255, 165, 0, 0.5)), url(../img/mammoth_trail.jpg);
+  background-size: center;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
+  clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh); }
+
+.section__about {
+  height: 75vh;
+  color: #202c4d;
+  text-align: center; }
+
+.about__heading {
+  padding-top: 3rem;
+  font-size: 1.5rem; }
+
+.row {
+  max-width: 80%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }

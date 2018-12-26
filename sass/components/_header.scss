@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+  height: 100vh;
+  color: rgb(32, 44, 77);
+
+  &__text {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    &-description,
+    &-description + span {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.section {
+  &__header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right top,
+        rgba(#4682b4, 0.6),
+        rgba(#ffa500, 0.5)
+      ),
+      url(../img/mammoth_trail.jpg);
+    background-size: center;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
+    clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
+  }
+
+  &__about {
+    height: 75vh;
+    color: rgb(32, 44, 77);
+    text-align: center;
+  }
+}
