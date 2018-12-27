@@ -2,7 +2,9 @@ let descriptionCounter = 0;
 
 function changeDescription() {
   const developerDescriptions = ["Developer", "Creator", "Innovator"];
-  let currentDescription = document.getElementById("header__text-description");
+  let currentDescription = document.getElementById(
+    "header__text-description-word"
+  );
 
   if (descriptionCounter < developerDescriptions.length - 1) {
     descriptionCounter += 1;

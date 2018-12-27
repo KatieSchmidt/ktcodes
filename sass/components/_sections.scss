@@ -11,10 +11,17 @@
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
     clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
+    position: relative;
   }
 
   &__about {
-    height: 100vh;
+    // height: 100vh;
+    color: rgb(32, 44, 77);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__projects {
     color: rgb(32, 44, 77);
     text-align: center;
     overflow: hidden;

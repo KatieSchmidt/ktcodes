@@ -12,13 +12,15 @@
   <body>
     
       <section class="section__header">
-        <div class="header">   
-          <h1 class="header__text">
-            <span class="header__text-name">Katie Schmidt. </br></span>
-            <span class="header__text-description" 
-            id="header__text-description" onclick=changeDescription()>Developer </span>
-            <span onclick=changeDescription()>&rarr;</span>
-          </h1>
+        <div class="header"> 
+          <div class="header__text" onclick=changeDescription()>
+            <p class="header__text-name">Katie Schmidt.</p>
+            <p class="header__text-description">
+              <span class="header__text-description-word" 
+              id="header__text-description-word" >Developer</span>
+              <span>&rarr;</span>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -49,7 +51,19 @@
         </div>
       </section>
       <section class="section__projects">
-
+        <div class="projects">
+          <div class="projects__header">
+            <h1>Projects</h1>
+          </div>
+          <div class="row">
+            <div class="col-1-of-2">
+              <p class="projects__info">Info about projects will go here</p>
+            </div>
+            <div class="col-1-of-2">
+              <img src="" class="projects__images" alt="project img"></img>
+            </div>
+          </div>
+        </div>    
       </section>
       <section class="section__contact">
 
