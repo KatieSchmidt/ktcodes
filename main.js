@@ -20,8 +20,13 @@ let logoCounter = 0;
 function changeLogo() {
   console.log("working");
   const developerLogos = [
-    "./img/html5-css3-js.png",
-    "./img/mongodb.jpg",
+    "./img/css3-logo-small.png",
+    "./img/HTML5_Logo_128.png",
+    "./img/javascript.png",
+    "./img/react.png",
+    "./img/redux.png",
+    "./img/node.png",
+    "./img/mongoDB-transparent.png",
     "./img/bootstrap.png"
   ];
   let currentLogo = document.getElementById("about__technologies-logo");
