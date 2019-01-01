@@ -1,0 +1,33 @@
+.navigation {
+  &__list {
+    color: rgb(32, 44, 77);
+    font-size: 3rem;
+    list-style: none;
+
+    &-link {
+      &:visited {
+        color: rgb(32, 44, 77);
+      }
+
+      &:active ~ &-item-logo {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &-item {
+      padding: 6rem 0;
+      // color: rgb(32, 44, 77);
+      text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    &-item-logo {
+      // &:active {
+      //   text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      // }
+
+      &:hover {
+        text-shadow: 0.6rem 0.7rem 1rem rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

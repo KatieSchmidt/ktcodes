@@ -29,7 +29,7 @@ function changeLogo() {
     "./img/mongoDB-transparent.png",
     "./img/bootstrap.png"
   ];
-  let currentLogo = document.getElementById("about__technologies-logo");
+  let currentLogo = document.getElementById("technologies__technologies-logo");
 
   if (logoCounter < developerLogos.length - 1) {
     logoCounter += 1;
@@ -38,4 +38,8 @@ function changeLogo() {
     logoCounter = 0;
     currentLogo.src = developerLogos[logoCounter];
   }
+}
+
+function uncheckNaviToggle() {
+  document.getElementById("navi-toggle").checked = false;
 }

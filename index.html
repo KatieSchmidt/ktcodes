@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
+    
     <script src="./main.js"></script>
 
     <title>KT Codes Portfolio</title>
   </head>
   <body>
-    
-      <section class="section__header">
+    <main>
+      <section class="section__header" id="section__header">
         <div class="header"> 
           <div class="header__text" onclick=changeDescription()>
             <p class="header__text-name">Katie Schmidt.</p>
@@ -24,7 +25,7 @@
         </div>
       </section>
 
-      <section class="section__technologies">
+      <section class="section__technologies" id="section__technologies">
         <div class="technologies">
           <h1 class="technologies__heading section-header" >Technologies</h1>
 
@@ -44,7 +45,9 @@
 
         </div>
       </section>
-      <section class="section__projects">
+
+
+      <section class="section__projects" id="section__projects">
         <div class="projects">
           <div class="projects__header">
             <h1 class=" section-header">Projects</h1>
@@ -59,8 +62,37 @@
           </div>
         </div>    
       </section>
-      <section class="section__contact">
+      <section class="section__contact" id="section__contact">
 
+      </section>
+
+      <section class="section__navigation">
+        <div class="navigation">
+          <ul class="navigation__list">
+            <a href="#section__header"  class="navigation__list-link">
+              <li class="navigation__list-item">
+                  <i class="fas fa-home navigation__list-item-logo"></i>
+              </li>
+            </a>
+            <a 
+            class="navigation__list-link" href="#section__technologies" >
+              <li class="navigation__list-item">
+                  <i class="fas fa-cubes navigation__list-item-logo"></i>
+              </li>
+            </a>
+            <a class="navigation__list-link" href="#section__projects" >
+              <li class="navigation__list-item">
+                <i class="fab fa-github navigation__list-item-logo"></i>
+              </li>
+            </a>
+            
+            <a class="navigation__list-link" href="#section__contact">
+              <li  class="navigation__list-item">
+                <i class="far fa-envelope navigation__list-item-logo"></i>         
+              </li>
+            </a>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
