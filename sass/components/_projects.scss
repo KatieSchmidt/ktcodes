@@ -6,7 +6,7 @@
   &__heading {
     position: absolute;
     left: 50vw;
-    top: 0;
+    top: 5%;
     transform: translateX(-50%);
   }
 
@@ -15,11 +15,11 @@
     width: 25rem;
     height: 25rem;
     left: 50%;
-    top: 15%;
+    top: 20%;
     transform: translateX(-50%);
 
     &-box {
-      color: black;
+      color: rgb(32, 44, 77);
       font-weight: 500;
       background-color: rgba(255, 255, 255, 0.4);
       position: relative;
@@ -66,10 +66,10 @@
     &-github,
     &-next {
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
-      color: black;
+      color: rgb(32, 44, 77);
       &:link,
       &:visited {
-        color: black;
+        color: rgb(32, 44, 77);
       }
 
       &:hover {
@@ -89,56 +89,81 @@
   &__images-display {
     overflow: hidden;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 25rem;
+    height: 25rem;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
     z-index: -5;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(187, 208, 236, 0.9);
 
     &-box {
-      color: black;
+      // color: black;
       font-weight: 500;
-      background-color: rgba(187, 208, 236, 0.9);
       position: relative;
-      height: 100vh;
-      width: 100vw;
-      border-radius: 5px;
-      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+      height: 25rem;
+      width: 25rem;
     }
 
     &-img {
       position: absolute;
-      width: 80%;
-      max-width: 70rem;
+      width: 100%;
+      // max-width: 70rem;
       height: auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
-    &-exit {
+    &-icon-box {
       position: absolute;
-      right: 5%;
-      top: 30%;
+      display: block;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: 1.6rem;
+      padding: 1rem;
+      background-color: rgb(187, 208, 236);
+      text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    &-exit {
+      padding-right: 3rem;
+
+      &:hover {
+        text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      }
     }
 
     &-next {
-      position: absolute;
-      right: 5%;
-      bottom: 30%;
-      font-size: 1.6rem;
+      padding-left: 3rem;
+
+      &:hover {
+        text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      }
     }
   }
 }
 
 .imagesInvisible {
+  transition: all 1s ease-out;
   opacity: 0;
   z-index: -1;
 }
 
 .imagesVisible {
+  transition: all 1s ease-out;
   opacity: 1;
   z-index: 1;
+  transform: translate(-50%, 82%);
 }

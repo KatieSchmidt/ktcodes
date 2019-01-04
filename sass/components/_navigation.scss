@@ -5,12 +5,14 @@
     list-style: none;
 
     &-link {
+      color: rgb(32, 44, 77);
       &:visited {
         color: rgb(32, 44, 77);
       }
     }
 
     &-item {
+      color: rgb(32, 44, 77);
       padding: 6rem 0;
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
     }

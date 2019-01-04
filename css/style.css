@@ -116,17 +116,17 @@ body {
   .projects__heading {
     position: absolute;
     left: 50vw;
-    top: 0;
+    top: 5%;
     transform: translateX(-50%); }
   .projects__display {
     position: absolute;
     width: 25rem;
     height: 25rem;
     left: 50%;
-    top: 15%;
+    top: 20%;
     transform: translateX(-50%); }
     .projects__display-box {
-      color: black;
+      color: #202c4d;
       font-weight: 500;
       background-color: rgba(255, 255, 255, 0.4);
       position: relative;
@@ -161,9 +161,9 @@ body {
       padding-bottom: 2rem; }
     .projects__display-images, .projects__display-github, .projects__display-next {
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
-      color: black; }
+      color: #202c4d; }
       .projects__display-images:link, .projects__display-images:visited, .projects__display-github:link, .projects__display-github:visited, .projects__display-next:link, .projects__display-next:visited {
-        color: black; }
+        color: #202c4d; }
       .projects__display-images:hover, .projects__display-github:hover, .projects__display-next:hover {
         text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
       .projects__display-images:active, .projects__display-github:active, .projects__display-next:active {
@@ -173,55 +173,71 @@ body {
   .projects__images-display {
     overflow: hidden;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -5; }
+    width: 25rem;
+    height: 25rem;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    z-index: -5;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(187, 208, 236, 0.9); }
     .projects__images-display-box {
-      color: black;
       font-weight: 500;
-      background-color: rgba(187, 208, 236, 0.9);
       position: relative;
-      height: 100vh;
-      width: 100vw;
-      border-radius: 5px;
-      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1); }
+      height: 25rem;
+      width: 25rem; }
     .projects__images-display-img {
       position: absolute;
-      width: 80%;
-      max-width: 70rem;
+      width: 100%;
       height: auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+    .projects__images-display-icon-box {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.6rem;
+      padding: 1rem;
+      background-color: #bbd0ec;
+      text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
     .projects__images-display-exit {
-      position: absolute;
-      right: 5%;
-      top: 30%;
-      font-size: 1.6rem; }
+      padding-right: 3rem; }
+      .projects__images-display-exit:hover {
+        text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      .projects__images-display-exit:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
     .projects__images-display-next {
-      position: absolute;
-      right: 5%;
-      bottom: 30%;
-      font-size: 1.6rem; }
+      padding-left: 3rem; }
+      .projects__images-display-next:hover {
+        text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      .projects__images-display-next:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
 
 .imagesInvisible {
+  transition: all 1s ease-out;
   opacity: 0;
   z-index: -1; }
 
 .imagesVisible {
+  transition: all 1s ease-out;
   opacity: 1;
-  z-index: 1; }
+  z-index: 1;
+  transform: translate(-50%, 82%); }
 
 .navigation__list {
   color: #202c4d;
   font-size: 3rem;
   list-style: none; }
-  .navigation__list-link:visited {
+  .navigation__list-link {
     color: #202c4d; }
+    .navigation__list-link:visited {
+      color: #202c4d; }
   .navigation__list-item {
+    color: #202c4d;
     padding: 6rem 0;
     text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
   .navigation__list-item-logo:hover {
