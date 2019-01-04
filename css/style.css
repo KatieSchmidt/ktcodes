@@ -14,7 +14,8 @@ body {
 
 .section-header {
   font-size: 3rem;
-  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  color: #202c4d; }
 
 .header {
   width: 70%;
@@ -27,6 +28,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  .header:active, .header:focus {
+    box-shadow: 0.7rem 0.7rem 1.5rem rgba(0, 0, 0, 0.2); }
   .header__text {
     font-size: 4rem;
     font-weight: 700;
@@ -49,36 +52,28 @@ body {
   left: 0;
   transform: translate(50%, -50%); }
 
-.section__technologies {
-  overflow: hidden; }
-
-.section__projects {
-  color: #202c4d;
-  text-align: center;
-  overflow: hidden;
-  height: 100vh; }
-
 .section__contact {
   height: 100vh; }
 
 .technologies {
-  height: 75vh;
+  height: 100vh;
+  padding-top: 25vh;
   color: #202c4d;
   position: relative; }
   .technologies__heading {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .technologies__technologies {
     position: absolute;
     cursor: pointer;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .technologies__technologies:focus, .technologies__technologies:active {
@@ -99,20 +94,126 @@ body {
       transform: translateX(-50%);
       font-size: 2.5rem;
       width: 3rem;
-      height: 3rem; }
+      height: 3rem;
+      color: #777575; }
   .technologies__info {
     width: 90%;
     display: block;
     position: absolute;
     font-weight: 600;
     font-size: 1.6rem;
-    top: 80%;
+    top: 85%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     text-align: center; }
+    .technologies__info-text {
+      margin: 0 1rem; }
 
-.projects__heading {
-  font-size: 2rem; }
+.projects {
+  height: 100vh;
+  position: relative;
+  color: #202c4d; }
+  .projects__heading {
+    position: absolute;
+    left: 50vw;
+    top: 0;
+    transform: translateX(-50%); }
+  .projects__display {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%); }
+    .projects__display-box {
+      color: black;
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.4);
+      position: relative;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1); }
+    .projects__display-name {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 1px #777575 solid; }
+    .projects__display-description-box {
+      position: absolute;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+      height: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.6rem;
+      overflow: scroll; }
+    .projects__display-description {
+      font-size: 1.6rem; }
+    .projects__display-icon-box {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.6rem;
+      padding-bottom: 2rem; }
+    .projects__display-images, .projects__display-github, .projects__display-next {
+      text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      color: black; }
+      .projects__display-images:link, .projects__display-images:visited, .projects__display-github:link, .projects__display-github:visited, .projects__display-next:link, .projects__display-next:visited {
+        color: black; }
+      .projects__display-images:hover, .projects__display-github:hover, .projects__display-next:hover {
+        text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      .projects__display-images:active, .projects__display-github:active, .projects__display-next:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
+      .projects__display-images:not(:first-child), .projects__display-github:not(:first-child), .projects__display-next:not(:first-child) {
+        padding-left: 2rem; }
+  .projects__images-display {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -5; }
+    .projects__images-display-box {
+      color: black;
+      font-weight: 500;
+      background-color: rgba(187, 208, 236, 0.9);
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      border-radius: 5px;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1); }
+    .projects__images-display-img {
+      position: absolute;
+      width: 80%;
+      max-width: 70rem;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .projects__images-display-exit {
+      position: absolute;
+      right: 5%;
+      top: 30%;
+      font-size: 1.6rem; }
+    .projects__images-display-next {
+      position: absolute;
+      right: 5%;
+      bottom: 30%;
+      font-size: 1.6rem; }
+
+.imagesInvisible {
+  opacity: 0;
+  z-index: -1; }
+
+.imagesVisible {
+  opacity: 1;
+  z-index: 1; }
 
 .navigation__list {
   color: #202c4d;
@@ -120,13 +221,13 @@ body {
   list-style: none; }
   .navigation__list-link:visited {
     color: #202c4d; }
-  .navigation__list-link:active ~ .navigation__list-link-item-logo {
-    text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
   .navigation__list-item {
     padding: 6rem 0;
     text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
   .navigation__list-item-logo:hover {
     text-shadow: 0.6rem 0.7rem 1rem rgba(0, 0, 0, 0.5); }
+  .navigation__list-item-logo:active {
+    text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
 
 .row {
   max-width: 90%;

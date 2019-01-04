@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <script src="./main.js"></script>
 
     <title>KT Codes Portfolio</title>
@@ -13,12 +18,15 @@
   <body>
     <main>
       <section class="section__header" id="section__header">
-        <div class="header"> 
-          <div class="header__text" onclick=changeDescription()>
+        <div class="header">
+          <div class="header__text" onclick="changeDescription()">
             <p class="header__text-name">Katie Schmidt.</p>
             <p class="header__text-description">
-              <span class="header__text-description-word" 
-              id="header__text-description-word" >Developer</span>
+              <span
+                class="header__text-description-word"
+                id="header__text-description-word"
+                >Developer</span
+              >
               <span>&rarr;</span>
             </p>
           </div>
@@ -27,76 +35,128 @@
 
       <section class="section__technologies" id="section__technologies">
         <div class="technologies">
-          <h1 class="technologies__heading section-header" >Technologies</h1>
+          <h1 class="technologies__heading section-header">Technology</h1>
 
-          <div class="technologies__technologies" onclick=changeLogo() >    
+          <div class="technologies__technologies" onclick="changeLogo()">
             <img
-            class="technologies__technologies-logo"
-            id="technologies__technologies-logo" src="./img/css3-logo-small.png" alt="html logo">
-            
-            <p class="technologies__technologies-arrow" >&rarr;</p>
+              class="technologies__technologies-logo"
+              id="technologies__technologies-logo"
+              src="./img/css3-logo-small.png"
+              alt="html logo"
+            />
+
+            <p class="technologies__technologies-arrow">&rarr;</p>
           </div>
 
           <div class="technologies__info">
             <p class="technologies__info-text">
-              I am a self taught full stack web developer confident utilizing these technologies and continuously striving to learn more.
+              I am a self taught full stack web developer confident utilizing
+              these technologies and continuously striving to learn more.
             </p>
           </div>
-
         </div>
       </section>
 
-
       <section class="section__projects" id="section__projects">
         <div class="projects">
-          <div class="projects__header">
-            <h1 class=" section-header">Projects</h1>
-          </div>
-          <div class="row">
-            <div class="col-1-of-2">
-              <p class="projects__info">Info about projects will go here</p>
-            </div>
-            <div class="col-1-of-2">
-              <img src="" class="projects__images" alt="project img"></img>
-            </div>
-          </div>
-        </div>    
-      </section>
-      <section class="section__contact" id="section__contact">
+          <h1 class="projects__heading section-header">Projects</h1>
+          <div class="projects__display">
+            <div class="projects__display-box">
+              <h2 class="projects__display-name" id="projects__display-name">
+                Four a Day Berries
+              </h2>
+              <div class="projects__display-description-box">
+                <p
+                  class="projects__display-description"
+                  id="projects__display-description"
+                >
+                  This is one of the first web sites I created. It was created
+                  using simple technologies: HTML, Express/Node.js, and Pug
+                  Templates. Then, it was styled using Bootstrap and CSS.
+                </p>
+              </div>
 
+              <div class="projects__display-icon-box">
+                <!-- this image will get bigger on hover and when you click it, a box
+                will pop up with images from the project. -->
+                <a class="projects__display-images">
+                  <i class="far fa-images" onclick="toggleImages()"></i>
+                </a>
+
+                <!-- this will obviously lead to the github
+                    for that project. it will need a script to change the href though so
+                    dont forget that part  -->
+                <a
+                  target="_blank"
+                  href="https://github.com/KatieSchmidt/blueberries"
+                  class="projects__display-github"
+                  id="projects__display-github"
+                  ><i class="fab fa-github "></i
+                ></a>
+
+                <!-- this will
+                take you to the next project -->
+                <a class="projects__display-next"
+                  ><i class="fas fa-chevron-right" onclick="changeProject()"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="projects__images-display imagesInvisible"
+            id="projects__images-display"
+          >
+            <div class="projects__images-display-box">
+              <img
+                src="https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348267/blueberries_k8fsa3.png"
+                alt="blueberries"
+                class="projects__images-display-img"
+                id="projects__images-display-img"
+              />
+              <i
+                class="fas fa-times projects__images-display-exit"
+                onclick="toggleImages()"
+              ></i>
+              <i
+                class="fas fa-chevron-right projects__images-display-next"
+                onclick="nextImage()"
+              ></i>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <section class="section__contact" id="section__contact"></section>
 
       <section class="section__navigation">
         <div class="navigation">
           <ul class="navigation__list">
-            <a href="#section__header"  class="navigation__list-link">
+            <a href="#section__header" class="navigation__list-link">
               <li class="navigation__list-item">
-                  <i class="fas fa-home navigation__list-item-logo"></i>
+                <i class="fas fa-home navigation__list-item-logo"></i>
               </li>
             </a>
-            <a 
-            class="navigation__list-link" href="#section__technologies" >
+            <a class="navigation__list-link" href="#section__technologies">
               <li class="navigation__list-item">
-                  <i class="fas fa-cubes navigation__list-item-logo"></i>
+                <i class="fas fa-cubes navigation__list-item-logo"></i>
               </li>
             </a>
-            <a class="navigation__list-link" href="#section__projects" >
+            <a class="navigation__list-link" href="#section__projects">
               <li class="navigation__list-item">
                 <i class="fab fa-github navigation__list-item-logo"></i>
               </li>
             </a>
-            
+
             <a class="navigation__list-link" href="#section__contact">
-              <li  class="navigation__list-item">
-                <i class="far fa-envelope navigation__list-item-logo"></i>         
+              <li class="navigation__list-item">
+                <i class="far fa-envelope navigation__list-item-logo"></i>
               </li>
             </a>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
-      
-    </footer>
+    <footer></footer>
   </body>
 </html>

@@ -1,5 +1,144 @@
 .projects {
+  height: 100vh;
+  position: relative;
+  color: rgb(32, 44, 77);
+
   &__heading {
-    font-size: 2rem;
+    position: absolute;
+    left: 50vw;
+    top: 0;
+    transform: translateX(-50%);
   }
+
+  &__display {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+
+    &-box {
+      color: black;
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.4);
+      position: relative;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+
+    &-name {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 1px rgb(119, 117, 117) solid;
+    }
+
+    &-description-box {
+      position: absolute;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+      height: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.6rem;
+      overflow: scroll;
+    }
+
+    &-description {
+      font-size: 1.6rem;
+    }
+
+    &-icon-box {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.6rem;
+      padding-bottom: 2rem;
+    }
+
+    &-images,
+    &-github,
+    &-next {
+      text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      color: black;
+      &:link,
+      &:visited {
+        color: black;
+      }
+
+      &:hover {
+        text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      }
+
+      &:not(:first-child) {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  &__images-display {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -5;
+
+    &-box {
+      color: black;
+      font-weight: 500;
+      background-color: rgba(187, 208, 236, 0.9);
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      border-radius: 5px;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+
+    &-img {
+      position: absolute;
+      width: 80%;
+      max-width: 70rem;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-exit {
+      position: absolute;
+      right: 5%;
+      top: 30%;
+      font-size: 1.6rem;
+    }
+
+    &-next {
+      position: absolute;
+      right: 5%;
+      bottom: 30%;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.imagesInvisible {
+  opacity: 0;
+  z-index: -1;
+}
+
+.imagesVisible {
+  opacity: 1;
+  z-index: 1;
 }

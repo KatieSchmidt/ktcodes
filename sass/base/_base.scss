@@ -17,5 +17,7 @@ body {
 }
 
 .section-header {
-  @include section-header;
+  font-size: 3rem;
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  color: rgb(32, 44, 77);
 }

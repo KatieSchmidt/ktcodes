@@ -10,6 +10,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  &:active,
+  &:focus {
+    box-shadow: 0.7rem 0.7rem 1.5rem rgba(0, 0, 0, 0.2);
+  }
+
   &__text {
     font-size: 4rem;
     font-weight: 700;

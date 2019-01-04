@@ -12,8 +12,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-@mixin section-header {
-  font-size: 3rem;
-  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-}
