@@ -1,0 +1,29 @@
+.contact {
+  &__list {
+    list-style: none;
+    color: rgb(32, 44, 77);
+
+    &-item,
+    &-item a {
+      text-decoration: none;
+      color: rgb(32, 44, 77);
+      font-size: 3rem;
+      text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      &:hover {
+        text-shadow: 0.6rem 0.7rem 1rem rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      }
+
+      &:visited,
+      &:link {
+        color: rgb(32, 44, 77);
+      }
+      &:not(:last-child) {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}

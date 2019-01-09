@@ -1,45 +1,26 @@
+//function counters
 let descriptionCounter = 0;
-
-function changeDescription() {
-  const developerDescriptions = ["Developer", "Creator", "Innovator"];
-  let currentDescription = document.getElementById(
-    "header__text-description-word"
-  );
-
-  if (descriptionCounter < developerDescriptions.length - 1) {
-    descriptionCounter += 1;
-    currentDescription.innerHTML = developerDescriptions[descriptionCounter];
-  } else {
-    descriptionCounter = 0;
-    currentDescription.innerHTML = developerDescriptions[descriptionCounter];
-  }
-}
-
 let logoCounter = 0;
-
-function changeLogo() {
-  const developerLogos = [
-    "./img/css3-logo-small.png",
-    "./img/HTML5_Logo_128.png",
-    "./img/javascript.png",
-    "./img/react.png",
-    "./img/redux.png",
-    "./img/node.png",
-    "./img/mongoDB-transparent.png",
-    "./img/bootstrap.png"
-  ];
-  let currentLogo = document.getElementById("technologies__technologies-logo");
-
-  if (logoCounter < developerLogos.length - 1) {
-    logoCounter += 1;
-    currentLogo.src = developerLogos[logoCounter];
-  } else {
-    logoCounter = 0;
-    currentLogo.src = developerLogos[logoCounter];
-  }
-}
-
 let projectCounter = 0;
+let imageCount = 0;
+
+//clickable divs in the HTML
+const headerText = document.getElementById("header__text");
+
+const technologiesTechnologies = document.getElementById(
+  "technologies__technologies"
+);
+technologiesTechnologies.onclick = changeLogo;
+
+const imageVisibilityToggler = document.getElementById("image__toggler");
+
+const closeImageVisibility = document.getElementById(
+  "projects__images-display-exit"
+);
+
+const showNextImage = document.getElementById("projects__images-display-next");
+
+//project information list
 const projects = [
   {
     name: "Four a Day Berries",
@@ -83,6 +64,44 @@ const projects = [
   }
 ];
 
+//functionality
+function changeDescription() {
+  const developerDescriptions = ["Developer", "Creator", "Innovator"];
+  let currentDescription = document.getElementById(
+    "header__text-description-word"
+  );
+
+  if (descriptionCounter < developerDescriptions.length - 1) {
+    descriptionCounter += 1;
+    currentDescription.innerHTML = developerDescriptions[descriptionCounter];
+  } else {
+    descriptionCounter = 0;
+    currentDescription.innerHTML = developerDescriptions[descriptionCounter];
+  }
+}
+
+function changeLogo() {
+  const developerLogos = [
+    "./img/css3-logo-small.png",
+    "./img/HTML5_Logo_128.png",
+    "./img/javascript.png",
+    "./img/react.png",
+    "./img/redux.png",
+    "./img/node.png",
+    "./img/mongoDB-transparent.png",
+    "./img/bootstrap.png"
+  ];
+  let currentLogo = document.getElementById("technologies__technologies-logo");
+
+  if (logoCounter < developerLogos.length - 1) {
+    logoCounter += 1;
+    currentLogo.src = developerLogos[logoCounter];
+  } else {
+    logoCounter = 0;
+    currentLogo.src = developerLogos[logoCounter];
+  }
+}
+
 function changeProject() {
   let name = document.getElementById("projects__display-name");
   let github = document.getElementById("projects__display-github");
@@ -101,22 +120,27 @@ function changeProject() {
   }
 }
 
-function toggleImages() {
+function toggleImageVisibility() {
   imageCount = 0;
   nextImage();
+  let projectsIconBox = document.getElementById("projects__display-icon-box")
+    .classList;
   let imageDisplayClasses = document.getElementById("projects__images-display")
     .classList;
 
   if (imageDisplayClasses.contains("imagesVisible")) {
     imageDisplayClasses.remove("imagesVisible");
     imageDisplayClasses.add("imagesInvisible");
+    projectsIconBox.remove("iconsInvisible");
+    projectsIconBox.add("iconsVisible");
   } else {
     imageDisplayClasses.add("imagesVisible");
     imageDisplayClasses.remove("imagesInvisible");
+    projectsIconBox.remove("iconsVisible");
+    projectsIconBox.add("iconsInvisible");
   }
 }
 
-let imageCount = 0;
 function nextImage() {
   let currentProjectImages = projects[projectCounter].images;
   let currentlyDisplayedImage = document.getElementById(
@@ -131,3 +155,9 @@ function nextImage() {
     currentlyDisplayedImage.src = currentProjectImages[imageCount];
   }
 }
+
+//actions
+headerText.onclick = changeDescription;
+showNextImage.onclick = nextImage;
+closeImageVisibility.onclick = toggleImageVisibility;
+imageVisibilityToggler.onclick = toggleImageVisibility;

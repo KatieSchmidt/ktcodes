@@ -11,7 +11,6 @@
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
     clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
-    position: relative;
   }
 
   &__navigation {
@@ -21,13 +20,10 @@
     transform: translate(50%, -50%);
   }
 
-  &__technologies {
-  }
-
-  &__projects {
-  }
-
   &__contact {
-    height: 100vh;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
   }
 }

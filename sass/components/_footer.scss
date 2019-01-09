@@ -1,0 +1,25 @@
+.footer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right top,
+      rgba(#4682b4, 0.7),
+      rgba(#ffa500, 0.6)
+    ),
+    url(../img/mammoth_trail.jpg);
+  background-size: fill;
+  background-position: bottom;
+  box-shadow: 0.2rem -0.25rem 1rem rgba(0, 0, 0, 0.493);
+
+  &__text {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: absolute;
+    color: rgb(32, 44, 77);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+}

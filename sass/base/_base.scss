@@ -13,7 +13,11 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: rgb(187, 208, 236);
+  background-image: linear-gradient(
+    to right top,
+    rgba(#4682b4, 0.4),
+    rgba(#ffa500, 0.3)
+  );
 }
 
 .section-header {

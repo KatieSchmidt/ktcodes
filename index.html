@@ -11,33 +11,34 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <script src="./main.js"></script>
-
     <title>KT Codes Portfolio</title>
   </head>
   <body>
-    <main>
-      <section class="section__header" id="section__header">
-        <div class="header">
-          <div class="header__text" onclick="changeDescription()">
-            <p class="header__text-name">Katie Schmidt.</p>
-            <p class="header__text-description">
-              <span
-                class="header__text-description-word"
-                id="header__text-description-word"
-                >Developer</span
-              >
-              <span>&rarr;</span>
-            </p>
-          </div>
+    <section class="section__header" id="section__header">
+      <div class="header">
+        <div class="header__text" id="header__text">
+          <p class="header__text-name">Katie Schmidt.</p>
+          <p class="header__text-description">
+            <span
+              class="header__text-description-word"
+              id="header__text-description-word"
+              >Developer</span
+            >
+            <span>&rarr;</span>
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <main>
       <section class="section__technologies" id="section__technologies">
         <div class="technologies">
           <h1 class="technologies__heading section-header">Technology</h1>
 
-          <div class="technologies__technologies" onclick="changeLogo()">
+          <div
+            class="technologies__technologies"
+            id="technologies__technologies"
+          >
             <img
               class="technologies__technologies-logo"
               id="technologies__technologies-logo"
@@ -76,16 +77,13 @@
                 </p>
               </div>
 
-              <div class="projects__display-icon-box">
-                <!-- this image will get bigger on hover and when you click it, a box
-                will pop up with images from the project. -->
+              <div
+                class="projects__display-icon-box"
+                id="projects__display-icon-box"
+              >
                 <a class="projects__display-images">
-                  <i class="far fa-images" onclick="toggleImages()"></i>
+                  <i class="far fa-images" id="image__toggler"></i>
                 </a>
-
-                <!-- this will obviously lead to the github
-                    for that project. it will need a script to change the href though so
-                    dont forget that part  -->
                 <a
                   target="_blank"
                   href="https://github.com/KatieSchmidt/blueberries"
@@ -93,9 +91,6 @@
                   id="projects__display-github"
                   ><i class="fab fa-github "></i
                 ></a>
-
-                <!-- this will
-                take you to the next project -->
                 <a class="projects__display-next"
                   ><i class="fas fa-chevron-right" onclick="changeProject()"></i
                 ></a>
@@ -117,11 +112,11 @@
               <div class="projects__images-display-icon-box">
                 <i
                   class="fas fa-times projects__images-display-exit"
-                  onclick="toggleImages()"
+                  id="projects__images-display-exit"
                 ></i>
                 <i
                   class="fas fa-chevron-right projects__images-display-next"
-                  onclick="nextImage()"
+                  id="projects__images-display-next"
                 ></i>
               </div>
             </div>
@@ -129,36 +124,65 @@
         </div>
       </section>
 
-      <section class="section__contact" id="section__contact"></section>
+      <section class="section__contact" id="section__contact">
+        <div class="contact">
+          <ul class="contact__list">
+            <li class="contact__list-item">
+              <a
+                href="mailto:katie_schmidt7@icloud.com"
+                class="contact__list-link"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+            <li class="contact__list-item">
+              <a
+                href="https://www.linkedin.com/in/katie-schmidt-37b092175/"
+                class="contact__list-link"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="contact__list-item">
+              <a
+                href="https://github.com/KatieSchmidt"
+                target="_blank"
+                class="contact__list-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="section__navigation">
         <div class="navigation">
           <ul class="navigation__list">
-            <a href="#section__header" class="navigation__list-link">
-              <li class="navigation__list-item">
-                <i class="fas fa-home navigation__list-item-logo"></i>
-              </li>
-            </a>
-            <a class="navigation__list-link" href="#section__technologies">
-              <li class="navigation__list-item">
-                <i class="fas fa-cubes navigation__list-item-logo"></i>
-              </li>
-            </a>
-            <a class="navigation__list-link" href="#section__projects">
-              <li class="navigation__list-item">
-                <i class="fab fa-github navigation__list-item-logo"></i>
-              </li>
-            </a>
-
-            <a class="navigation__list-link" href="#section__contact">
-              <li class="navigation__list-item">
-                <i class="far fa-envelope navigation__list-item-logo"></i>
-              </li>
-            </a>
+            <li class="navigation__list-item">
+              <a href="#section__header" class="navigation__list-link">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#section__technologies">
+                <i class="fas fa-cubes"></i>
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#section__projects">
+                <i class="fas fa-box-open"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__text"><p>Created by Katie Schmidt 2019</p></div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="./playground.js"></script>
   </body>
 </html>
