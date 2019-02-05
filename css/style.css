@@ -40,7 +40,8 @@ body {
 .section__header {
   height: 100vh;
   background-image: linear-gradient(to right top, rgba(70, 130, 180, 0.6), rgba(255, 165, 0, 0.5)), url(../img/mammoth_trail.jpg);
-  background-size: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
   clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh); }
@@ -59,12 +60,11 @@ body {
 
 .technologies {
   height: 100vh;
-  padding-top: 25vh;
   color: #202c4d;
   position: relative; }
   .technologies__heading {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .technologies__technologies {
@@ -75,7 +75,7 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .technologies__technologies:focus, .technologies__technologies:active {
@@ -85,8 +85,9 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 15rem;
+      width: 50%;
       height: auto;
+      max-height: 80%;
       transition: opacity 1s; }
     .technologies__technologies-arrow {
       position: absolute;
@@ -191,6 +192,8 @@ body {
       position: absolute;
       width: 90%;
       height: auto;
+      max-height: 80%;
+      max-width: auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -248,105 +251,6 @@ body {
     .navigation__list-item:not(:last-child), .navigation__list-link:not(:last-child) {
       padding-bottom: 3rem; }
 
-.playground {
-  margin-left: 10vh;
-  overflow: hidden;
-  height: 100%; }
-  .playground__1 {
-    height: 100%;
-    z-index: 1; }
-  .playground__2 {
-    margin-left: 5vh;
-    height: 100%;
-    z-index: 2;
-    background-color: rgba(255, 0, 0, 0.685); }
-  .playground__row {
-    height: 10%; }
-  .playground__column {
-    border: 1px red solid;
-    width: 19%;
-    height: 100%;
-    display: inline-block; }
-
-.triangle {
-  background-color: black;
-  width: 10vh;
-  width: 10vh;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
-
-.trapezoid {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); }
-
-.parallelogram {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
-
-.rhombus {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
-
-.pentagon {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); }
-
-.hexagon {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
-
-.heptagon {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
-
-.rabbet {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); }
-
-.left {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); }
-
-.right {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); }
-
-.star {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
-
-.close {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); }
-
-.circle {
-  background-color: black;
-  width: 10vh;
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%); }
-
 .contact__list {
   list-style: none;
   color: #202c4d; }
@@ -379,11 +283,14 @@ body {
   background-position: bottom;
   box-shadow: 0.2rem -0.25rem 1rem rgba(0, 0, 0, 0.493); }
   .footer__text {
-    width: 100%;
+    text-align: center;
     font-size: 1.6rem;
     font-weight: 700;
     position: absolute;
-    color: #202c4d; }
+    color: #202c4d;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .row {
   max-width: 90%;

@@ -7,7 +7,8 @@
         rgba(#ffa500, 0.5)
       ),
       url(../img/mammoth_trail.jpg);
-    background-size: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
     clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 50vw 100vh, 0 75vh);
