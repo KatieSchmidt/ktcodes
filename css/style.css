@@ -118,7 +118,7 @@ body {
   color: #202c4d; }
   .projects__heading {
     position: absolute;
-    left: 50vw;
+    left: 50%;
     top: 5%;
     transform: translateX(-50%); }
   .projects__display {
@@ -141,31 +141,30 @@ body {
       padding-top: 1rem;
       padding-bottom: 1rem;
       font-size: 2rem;
-      text-align: center;
-      border-bottom: 1px #777575 solid; }
+      text-align: center; }
     .projects__display-description-box {
       position: absolute;
-      margin-left: 5%;
-      margin-right: 5%;
-      width: 90%;
-      height: 50%;
-      top: 50%;
-      transform: translateY(-50%);
+      width: 100%;
+      height: 100%;
+      max-height: calc(100% - 7rem);
+      top: 4rem;
+      padding: 0rem 1.5rem 0rem 1.5rem;
       font-size: 1.6rem;
       overflow: scroll; }
-    .projects__display-description {
-      font-size: 1.6rem; }
     .projects__display-icon-box {
       position: absolute;
       width: 100%;
-      height: 10%;
+      height: 3rem;
       bottom: 0;
       font-size: 1.6rem;
-      text-align: center; }
+      text-align: center;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem; }
     .projects__display-images, .projects__display-github, .projects__display-next {
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
       color: #202c4d;
-      padding: 10%; }
+      padding: 0 10% 0 10%;
+      margin-top: 10px; }
       .projects__display-images:link, .projects__display-images:visited, .projects__display-github:link, .projects__display-github:visited, .projects__display-next:link, .projects__display-next:visited {
         color: #202c4d; }
       .projects__display-images:hover, .projects__display-github:hover, .projects__display-next:hover {
