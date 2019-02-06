@@ -23,18 +23,6 @@ const showNextImage = document.getElementById("projects__images-display-next");
 //project information list
 const projects = [
   {
-    name: "Waggle Simulator",
-    github: "https://github.com/KatieSchmidt/waggle_dance_simulator",
-    info:
-      "The waggle dance is a dance done by honey bees. This informative site explains the dance and also provides an interactive simulation with animations created with CSS and vanilla Javascript.",
-    images: [
-      "./img/waggle.png",
-      "./img/waggle-2.png",
-      "./img/waggle-3.png",
-      "./img/waggle-4.png"
-    ]
-  },
-  {
     name: "Four a Day Berries",
     github: "https://github.com/KatieSchmidt/blueberries",
     info:
@@ -72,6 +60,18 @@ const projects = [
       "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348271/portfolio3_vqdwyd.png",
       "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348271/portfolio4_fjjoaa.png",
       "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348273/portfolio5_pkpwxb.png"
+    ]
+  },
+  {
+    name: "Waggle Simulator",
+    github: "https://github.com/KatieSchmidt/waggle_dance_simulator",
+    info:
+      "The waggle dance is a dance done by honey bees. This informative site explains the dance and also provides an interactive simulation with animations created with CSS and vanilla Javascript.",
+    images: [
+      "./img/waggle.png",
+      "./img/waggle-2.png",
+      "./img/waggle-3.png",
+      "./img/waggle-4.png"
     ]
   }
 ];
