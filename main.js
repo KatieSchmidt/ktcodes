@@ -98,7 +98,7 @@ function changeLogo() {
     "./img/HTML5_Logo_128.png",
     "./img/javascript.png",
     "./img/react.png",
-    "./img/redux.png",
+    "./img/Redux.png",
     "./img/node.png",
     "./img/mongoDB-transparent.png",
     "./img/bootstrap.png"
