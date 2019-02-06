@@ -102,13 +102,11 @@
 
     &-img {
       position: absolute;
-      width: 90%;
-      height: auto;
-      max-height: 80%;
-      max-width: auto;
-      top: 50%;
+      height: calc(100% - 3rem);
+      width: auto;
+      top: 3rem;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       border-radius: 2px;
       box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
     }
@@ -116,15 +114,23 @@
     &-icon-box {
       position: absolute;
       width: 100%;
+      height: 3rem;
       top: 0;
       font-size: 1.6rem;
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
       text-align: center;
+
+      &-relative {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
     }
 
     &-exit,
     &-next {
-      padding: 10% 20% 0 20%;
+      position: absolute;
+      top: 0.7rem;
       &:hover {
         text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
       }
@@ -132,6 +138,13 @@
       &:active {
         text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
       }
+    }
+
+    &-exit {
+      left: 25%;
+    }
+    &-next {
+      right: 25%;
     }
   }
 }
@@ -146,7 +159,7 @@
   transition: all 1s ease-out;
   opacity: 1;
   z-index: 1;
-  transform: translate(-50%, 82%);
+  transform: translate(-50%, 84%);
 }
 
 .iconsInvisible {
