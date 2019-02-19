@@ -25,6 +25,7 @@ const projects = [
   {
     name: "Four a Day Berries",
     github: "https://github.com/KatieSchmidt/blueberries",
+    website: "https://fouradayberries.herokuapp.com/",
     info:
       "Four a Day Berries is a small company/farm in Kentucky. This is their personal website to inform customers about their farm/products. Created with Node.js, Pug templates and styled with a combination of Bootstrap and CSS.",
     images: [
@@ -39,7 +40,8 @@ const projects = [
   },
   {
     name: "Waggle Simulator",
-    github: "https://katieschmidt.github.io/waggle_dance_simulator",
+    github: "https://github.com/KatieSchmidt/waggle_dance_simulator",
+    website: "https://katieschmidt.github.io/waggle_dance_simulator",
     info:
       "The waggle dance is a dance done by honey bees. This informative site explains the dance and also provides an interactive simulation with animations created with CSS and vanilla Javascript.",
     images: [
@@ -52,20 +54,25 @@ const projects = [
   {
     name: "Simple Meal Planning",
     github: "https://github.com/KatieSchmidt/react_meal_plan",
+    website: "not available",
     info:
       "One of my favorite pet projects. I made it to learn Redux. This project utilizes React, Redux, Express/Node.js, and MongoDB. It is also styled using a combination of Bootstrap and CSS.",
+
     images: [
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348265/mealplan1_q7hkam.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/mealplan2_a71rgz.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/mealplan3_z9lefj.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/mealplan4_swoaeb.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/mealplan5_l4ykgx.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348268/mealplan6_gtosnb.png"
+      "./img/mp.png",
+      "./img/mp2.png",
+      "./img/mp3.png",
+      "./img/mp4.png",
+      "./img/mp5.png",
+      "./img/mp6.png",
+      "./img/mp7.png",
+      "./img/mp8.png"
     ]
   },
   {
     name: "First Portfolio",
     github: "https://github.com/KatieSchmidt/portfolio",
+    website: "not available yet",
     info:
       "This is one of my first attempts at a web portfolio. I worked on it for a long time before I realized I was including way more functionality than I wanted for a portfolio website. The technologies: MongoDB, Express/Node.js, Bootstrap,CSS, Pug templates, and I went ahead and used Docker because thats what I originally used to host it on DigitalOcean.",
     images: [
@@ -120,17 +127,20 @@ function changeProject() {
   let name = document.getElementById("projects__display-name");
   let github = document.getElementById("projects__display-github");
   let info = document.getElementById("projects__display-description");
+  let website = document.getElementById("projects__display-website");
 
   if (projectCounter < projects.length - 1) {
     projectCounter += 1;
     name.innerHTML = projects[projectCounter].name;
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
+    website.href = projects[projectCounter].website;
   } else {
     projectCounter = 0;
     name.innerHTML = projects[projectCounter].name;
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
+    website.href = projects[projectCounter].website;
   }
 }
 
