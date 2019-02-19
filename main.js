@@ -26,13 +26,15 @@ const projects = [
     name: "Four a Day Berries",
     github: "https://github.com/KatieSchmidt/blueberries",
     info:
-      "This is one of the first web sites I created. It was created using simple technologies: HTML, Express/Node.js, and Pug Templates. Then, it was styled using Bootstrap and CSS.",
+      "Four a Day Berries is a small company/farm in Kentucky. This is their personal website to inform customers about their farm/products. Created with Node.js, Pug templates and styled with a combination of Bootstrap and CSS.",
     images: [
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348267/blueberries_k8fsa3.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/blueberries2_e6xg83.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/blueberries3_eyiusu.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348266/blueberries4_bc7h9o.png",
-      "https://res.cloudinary.com/dvwdtlhxx/image/upload/v1543348265/blueberries5_sf0weg.png"
+      "./img/4ad.png",
+      "./img/4ad2.png",
+      "./img/4ad3.png",
+      "./img/4ad4.png",
+      "./img/4ad5.png",
+      "./img/4ad6.png",
+      "./img/4ad7.png"
     ]
   },
   {

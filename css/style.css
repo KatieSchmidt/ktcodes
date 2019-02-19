@@ -160,16 +160,16 @@ body {
       text-align: center;
       padding-top: 0.7rem;
       padding-bottom: 0.7rem; }
-    .projects__display-images, .projects__display-github, .projects__display-next {
+    .projects__display-images, .projects__display-github, .projects__display-next, .projects__display-website {
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
       color: #202c4d;
-      padding: 0 10% 0 10%;
+      padding: 0 5% 0 5%;
       margin-top: 10px; }
-      .projects__display-images:link, .projects__display-images:visited, .projects__display-github:link, .projects__display-github:visited, .projects__display-next:link, .projects__display-next:visited {
+      .projects__display-images:link, .projects__display-images:visited, .projects__display-github:link, .projects__display-github:visited, .projects__display-next:link, .projects__display-next:visited, .projects__display-website:link, .projects__display-website:visited {
         color: #202c4d; }
-      .projects__display-images:hover, .projects__display-github:hover, .projects__display-next:hover {
+      .projects__display-images:hover, .projects__display-github:hover, .projects__display-next:hover, .projects__display-website:hover {
         text-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
-      .projects__display-images:active, .projects__display-github:active, .projects__display-next:active {
+      .projects__display-images:active, .projects__display-github:active, .projects__display-next:active, .projects__display-website:active {
         text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.4); }
   .projects__images-display {
     overflow: hidden;

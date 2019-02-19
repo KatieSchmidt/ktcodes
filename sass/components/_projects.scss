@@ -60,10 +60,11 @@
 
     &-images,
     &-github,
-    &-next {
+    &-next,
+    &-website {
       text-shadow: 0.3rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
       color: rgb(32, 44, 77);
-      padding: 0 10% 0 10%;
+      padding: 0 5% 0 5%;
       margin-top: 10px;
 
       &:link,
