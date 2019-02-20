@@ -25,6 +25,10 @@ const previousProjectIcon = document.getElementById(
 
 const nextProjectIcon = document.getElementById("projects__display-next");
 
+const projectDisplayIconBox = document.getElementById(
+  "projects__display-icon-box"
+);
+
 //project information list
 const projects = [
   {
@@ -59,7 +63,6 @@ const projects = [
   {
     name: "Simple Meal Planning",
     github: "https://github.com/KatieSchmidt/react_meal_plan",
-    website: "not available",
     info:
       "One of my favorite pet projects. I made it to learn Redux. This project utilizes React, Redux, Express/Node.js, and MongoDB. It is also styled using a combination of Bootstrap and CSS.",
 
@@ -77,7 +80,6 @@ const projects = [
   {
     name: "First Portfolio",
     github: "https://github.com/KatieSchmidt/portfolio",
-    website: "not available yet",
     info:
       "This is one of my first attempts at a web portfolio. I worked on it for a long time before I realized I was including way more functionality than I wanted for a portfolio website. The technologies: MongoDB, Express/Node.js, Bootstrap,CSS, Pug templates, and I went ahead and used Docker because thats what I originally used to host it on DigitalOcean.",
     images: [
@@ -136,16 +138,28 @@ function changeProject() {
 
   if (projectCounter < projects.length - 1) {
     projectCounter += 1;
+    let projectIsLive = projects[projectCounter].hasOwnProperty("website");
+    if (projectIsLive) {
+      website.style.display = "inline";
+      website.href = projects[projectCounter].website;
+    } else {
+      website.style.display = "none";
+    }
     name.innerHTML = projects[projectCounter].name;
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
-    website.href = projects[projectCounter].website;
   } else {
     projectCounter = 0;
+    let projectIsLive = projects[projectCounter].hasOwnProperty("website");
+    if (projectIsLive) {
+      website.style.display = "inline";
+      website.href = projects[projectCounter].website;
+    } else {
+      website.style.display = "none";
+    }
     name.innerHTML = projects[projectCounter].name;
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
-    website.href = projects[projectCounter].website;
   }
 }
 
@@ -157,16 +171,28 @@ function previousProject() {
 
   if (projectCounter > 0) {
     projectCounter -= 1;
+    let projectIsLive = projects[projectCounter].hasOwnProperty("website");
+    if (projectIsLive) {
+      website.style.display = "inline";
+      website.href = projects[projectCounter].website;
+    } else {
+      website.style.display = "none";
+    }
     name.innerHTML = projects[projectCounter].name;
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
-    website.href = projects[projectCounter].website;
   } else {
     projectCounter = projects.length - 1;
+    let projectIsLive = projects[projectCounter].hasOwnProperty("website");
+    if (projectIsLive) {
+      website.style.display = "inline";
+      website.href = projects[projectCounter].website;
+    } else {
+      website.style.display = "none";
+    }
     name.innerHTML = projects[projectCounter].name;
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
-    website.href = projects[projectCounter].website;
   }
 }
 
