@@ -10,7 +10,6 @@ const headerText = document.getElementById("header__text");
 const technologiesTechnologies = document.getElementById(
   "technologies__technologies"
 );
-technologiesTechnologies.onclick = changeLogo;
 
 const imageVisibilityToggler = document.getElementById("image__toggler");
 
@@ -19,6 +18,12 @@ const closeImageVisibility = document.getElementById(
 );
 
 const showNextImage = document.getElementById("projects__images-display-next");
+
+const previousProjectIcon = document.getElementById(
+  "projects__display-previous"
+);
+
+const nextProjectIcon = document.getElementById("projects__display-next");
 
 //project information list
 const projects = [
@@ -144,6 +149,27 @@ function changeProject() {
   }
 }
 
+function previousProject() {
+  let name = document.getElementById("projects__display-name");
+  let github = document.getElementById("projects__display-github");
+  let info = document.getElementById("projects__display-description");
+  let website = document.getElementById("projects__display-website");
+
+  if (projectCounter > 0) {
+    projectCounter -= 1;
+    name.innerHTML = projects[projectCounter].name;
+    github.href = projects[projectCounter].github;
+    info.innerHTML = projects[projectCounter].info;
+    website.href = projects[projectCounter].website;
+  } else {
+    projectCounter = projects.length - 1;
+    name.innerHTML = projects[projectCounter].name;
+    github.href = projects[projectCounter].github;
+    info.innerHTML = projects[projectCounter].info;
+    website.href = projects[projectCounter].website;
+  }
+}
+
 function toggleImageVisibility() {
   imageCount = 0;
   nextImage();
@@ -181,7 +207,15 @@ function nextImage() {
 }
 
 //actions
+technologiesTechnologies.onclick = changeLogo;
 headerText.onclick = changeDescription;
 showNextImage.onclick = nextImage;
 closeImageVisibility.onclick = toggleImageVisibility;
 imageVisibilityToggler.onclick = toggleImageVisibility;
+
+nextProjectIcon.onclick = changeProject;
+previousProjectIcon.onclick = previousProject;
+
+// setInterval(() => changeDescription(), 4000);
+
+// setInterval(() => changeLogo(), 3000);

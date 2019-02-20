@@ -24,7 +24,7 @@
               id="header__text-description-word"
               >Developer</span
             >
-            <span>&rarr;</span>
+            <span class="header__text-description-arrow">&rarr;</span>
           </p>
         </div>
       </div>
@@ -82,9 +82,16 @@
                 class="projects__display-icon-box"
                 id="projects__display-icon-box"
               >
+                <a
+                  class="projects__display-previous"
+                  id="projects__display-previous"
+                  ><i class="fas fa-chevron-left"></i
+                ></a>
+
                 <a class="projects__display-images">
                   <i class="far fa-images" id="image__toggler"></i>
                 </a>
+
                 <a
                   target="_blank"
                   href="https://github.com/KatieSchmidt/blueberries"
@@ -92,6 +99,7 @@
                   id="projects__display-github"
                   ><i class="fab fa-github "></i
                 ></a>
+
                 <a
                   target="_blank"
                   href="https://fouradayberries.herokuapp.com/"
@@ -99,8 +107,9 @@
                   id="projects__display-website"
                   ><i class="far fa-eye"></i
                 ></a>
-                <a class="projects__display-next"
-                  ><i class="fas fa-chevron-right" onclick="changeProject()"></i
+
+                <a class="projects__display-next" id="projects__display-next"
+                  ><i class="fas fa-chevron-right"></i
                 ></a>
               </div>
             </div>
