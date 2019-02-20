@@ -194,6 +194,7 @@ function previousProject() {
     github.href = projects[projectCounter].github;
     info.innerHTML = projects[projectCounter].info;
   }
+  console.log("clicked previous");
 }
 
 function toggleImageVisibility() {
@@ -215,6 +216,7 @@ function toggleImageVisibility() {
     projectsIconBox.remove("iconsVisible");
     projectsIconBox.add("iconsInvisible");
   }
+  console.log("clicked next");
 }
 
 function nextImage() {
