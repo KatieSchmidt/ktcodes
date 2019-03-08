@@ -78,6 +78,19 @@ const projects = [
     ]
   },
   {
+    name: "Web Scraped Notecards",
+    github: "https://github.com/KatieSchmidt/interview-scraper",
+    website: "https://express-flashcards.herokuapp.com/",
+    info:
+      "I wanted to make a web scraper. So I made a scraper to scrape interview questions from a couple websites and then made this to utilize the data I gathered. It uses Express/Node.js and Pug templates.",
+    images: [
+      "./img/flash.png",
+      "./img/flash2.png",
+      "./img/flash3.png",
+      "./img/flash4.png"
+    ]
+  },
+  {
     name: "First Portfolio",
     github: "https://github.com/KatieSchmidt/portfolio",
     info:
